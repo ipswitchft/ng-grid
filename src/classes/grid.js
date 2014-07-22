@@ -436,7 +436,7 @@ var ngGrid = function ($scope, options, sortService, domUtilityService, $filter,
             }
 
              // check if it is a number
-            if (isNaN(t) && !$scope.hasUserChangedGridColumnWidths) {
+            if (isNaN(t)) {
                 t = colDef.width;
                 // figure out if the width is defined or if we need to calculate it
                 if (t === 'auto') { // set it for now until we have data and subscribe when it changes so we can set the width.
